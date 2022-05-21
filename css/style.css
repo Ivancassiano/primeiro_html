@@ -134,44 +134,38 @@ a:link {
     font-size: 30px;
 }
 
-@media only screen and (max-width: 500px) {
-
-    .wrapper {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .banner {
-        width: 100%;
-        height: 400px;
-        background: url('../img/banners/office.jpg') no-repeat;
-        background-size: cover;
-        position: relative;
-        background-position: bottom;
-    }
-    
-    .banner div{
-        position: absolute;
-        left: 10%;
-        margin-right: 10%;
-        margin-top: 100px;
-    }
-    
-    
-    .banner h1{
-        margin-right: 50px;
-        font-size: 25px;
-    }
-    
-    .banner h3{
-        margin-right: 190px;
-        font-size: 20px;
-    }
 
 
-  }
+/* Produtos e Serviços */
+
+
+.prod_serv{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.prod_serv div{
+    flex: 1 1;
+    background-color: #333;
+    padding: 60px;
+    height: 80px;
+    align-items: center;
+    justify-items: center;
+}
+
+.prod_serv h3{
+    color: white;
+}
+
+
+
+
+
+
 
 
 
@@ -229,3 +223,50 @@ a:link {
     margin: 10px;
 }
 
+
+
+@media only screen and (max-width: 1200px) {
+
+    .wrapper {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .banner {
+        width: 100%;
+        height: 400px;
+        background: url('../img/banners/office.jpg') no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: bottom;
+    }
+    
+    .banner div{
+        position: absolute;
+        left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    
+    
+    .banner h1{
+        margin-right: 50px;
+        font-size: 25px;
+    }
+    
+    .banner h3{
+        margin-right: 190px;
+        font-size: 20px;
+    }
+
+    .prod_serv{
+        flex-direction: column;
+    }
+
+    .prod_serv div{
+        width: 100%;
+        height: 30px;
+    }
+  }
