@@ -1,3 +1,7 @@
+p, h1, h2, h3, h4, h5, h6, span {
+    margin: 0;
+}
+
 body, ul, li, p{
     list-style: none;
     font-size: 1.2rem;
@@ -5,12 +9,17 @@ body, ul, li, p{
 
 }
 
+body, html{
+    width: 100%;
+}
+
 .wrapper {
     margin: 0 auto;
-    max-width: 1500px;
-    min-height: 100vh;
-
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 }
+
 
 a{
     text-decoration: none;
@@ -21,33 +30,48 @@ a:link {
     color: white;
 }
 
-img{
-    max-width: 100%;
-    display: block;
+
+
+/* configuração do header */
+
+.logomarca{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.social p {
+    color: #333;
+    margin: 0 10px 0 0;
+}
+
+.social img{
+    width: 40px;
+    margin: 5px;
+
+}
+
+.social{
+    display: flex;
+    align-items: center;
 }
 
 
 
+/* configuração do Menu */
 
-#logomarca{
-    margin: 10px;
-}
-
-#rol{
+.menu{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 1;
+    overflow: hidden;
 }
 
-
-nav::after{
-    clear: both;
-    content: "";
-    display: block;
-}
-
-
-.menu{
+.menu div{
     background-color: #333;
     overflow: hidden;
     position: relative;
@@ -60,15 +84,6 @@ nav::after{
     text-align: center;
     padding: 20px 18px;
     font-size: 18px;
-  }
-
-  .menu input[type=text]{
-    float: right;
-    padding: 14px;
-    border: none;
-    margin-top: 7px;
-    margin-right: 16px;
-    font-size: 17px;
   }
 
   .menu a:hover{
@@ -84,6 +99,81 @@ nav::after{
 
 
 
+/* configuração do banner */
+
+.banner {
+    width: 100%;
+    height: 600px;
+    background: url('../img/banners/office.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: bottom;
+}
+
+.banner div{
+    position: absolute;
+    left: 10%;
+    margin-right: 10%;
+    margin-top: 200px;
+}
+
+
+.banner h1{
+    color: white;
+    background-color: rgba(204, 0, 33, 0.8);
+    padding: 10px;
+    margin: 0 0 10px 0;
+    font-size: 40px;
+}
+
+.banner h3{
+    color: white;
+    background-color: rgba(204, 0, 33, 0.8);
+    padding: 10px;
+    margin-right: 180px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .wrapper {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .banner {
+        width: 100%;
+        height: 400px;
+        background: url('../img/banners/office.jpg') no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: bottom;
+    }
+    
+    .banner div{
+        position: absolute;
+        left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    
+    
+    .banner h1{
+        margin-right: 50px;
+        font-size: 25px;
+    }
+    
+    .banner h3{
+        margin-right: 190px;
+        font-size: 20px;
+    }
+
+
+  }
+
+
 
 
 
@@ -93,7 +183,6 @@ nav::after{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -140,11 +229,3 @@ nav::after{
     margin: 10px;
 }
 
-.social img{
-    width: 40px;
-    margin: 5px;
-}
-
-.social{
-    display: flex;
-}
