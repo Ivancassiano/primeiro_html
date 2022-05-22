@@ -136,54 +136,110 @@ a:link {
 
 
 
-/* Produtos e Serviços */
+/* Box Produtos e Serviços */
 
 
 .prod_serv{
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
-
-.prod_serv div{
+.boxtitle{
     flex: 1 1;
-    background-color: #333;
-    padding: 60px;
-    height: 80px;
     align-items: center;
-    justify-items: center;
-}
-
-.prod_serv h3{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    background-color: #333;
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.divflex{
-    flex-wrap: wrap;
+.box{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 auto;
+    flex: 1 1;
+    color: white;
+    height: 200px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
 
-.divflex > div{
-    flex: 1 1 400px;
-    margin: 10px;
+#ti{
+    margin: 0 20px 0 30px;    
 }
+
+#mg{
+    background-color: rgb(154, 0, 33);
+}
+
+#pr{
+    background-color: rgb(179, 0, 33);
+}
+
+#mm{
+    background-color: rgb(204, 0, 33);
+}
+
+.prod_serv img{
+    width: 80px;
+    margin: 0 0 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Box Alguns produtos*/
+
+
+.titlebox{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.boxprodutos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.boxprod img {
+    max-width: 260px;
+    padding: 30px;
+    border: 1px solid #333;
+    margin: 20px;
+
+}
+
+.boxtexto{
+    margin: 10px 0 0 0;
+    color: #333;
+    max-width: 350px;
+}
+
+
+.boxprod p{
+    margin-bottom: 30px;
+}
+
+.boxprod h3{
+    border-bottom: 1px solid #333;
+}
+
+
+
+
 
 
 
@@ -200,12 +256,15 @@ a:link {
 
 
 
+
+
+
+
+
 .rodape{
     background-color: #333;
     color: #ddd;
-    padding: 20px 30px 20px 30px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    padding: 40px 30px 20px 30px;
     bottom: 0;
     position: relative;
 
@@ -217,7 +276,7 @@ a:link {
     flex-wrap: wrap;
 }
 
-.footer > div{
+.footer div{
     flex: 1 1 300px;
     align-items: center;
     margin: 10px;
@@ -225,7 +284,26 @@ a:link {
 
 
 
-@media only screen and (max-width: 1200px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
 
     .wrapper {
         margin: 0 auto;
@@ -250,7 +328,6 @@ a:link {
         margin-top: 100px;
     }
     
-    
     .banner h1{
         margin-right: 50px;
         font-size: 25px;
@@ -261,12 +338,42 @@ a:link {
         font-size: 20px;
     }
 
+
+
+    /*Box*/
+
+
     .prod_serv{
         flex-direction: column;
     }
 
-    .prod_serv div{
+    .prod_serv img{
+        width: 40px;
+        margin: 30px 30px 30px 50px;
+    }
+
+    .boxtitle{
+        display: flex;
+        justify-content: left;
+        flex-direction:row;
         width: 100%;
         height: 30px;
+    }
+
+    .box{
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+    }
+
+    .box div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #ti{
+        margin: 30px;    
     }
   }
