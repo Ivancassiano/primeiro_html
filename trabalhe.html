@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" contsent="width=device-width initial-scale=1.0" />
+        <title>Trabalhe conosco - A Base Flex</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="img/icons/favicon.png" />
+
+    </head>
+
+    <body class="wrapper">
+
+
+        <!--Menu e Logomarca-->
+
+        <header>
+            <div class="logomarca">
+                <a href="index.html"><img src="img/logo.svg"  alt="Logo" title="Logo" width="120px"/></a>
+                <div>
+                    <ul class="social">
+                        <li><a href="mailto:abaseflexmoveis@terra.com.br" target="_blank"><img src="img/social/email.svg" alt="Email"></a></li>                       
+                        <li><a href="https://www.facebook.com/abaseflex.abaseflex" target="_blank"><img src="img/social/face.svg" alt="Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/absfxmoveis/" target="_blank"><img src="img/social/insta.svg" alt="instagram"></a></li>
+                        <li><a href="https://wa.me/5516991492434" target="_blank"><img src="img/social/whats.svg" alt="WhatsApp"></a></li>
+                    </ul>
+                <div>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <div>
+                <a href="index.html">Início</a>
+                <a href="contatosobre.html">Produtos e Serviços</a>
+                <a href="sobre.html">Sobre Nós</a>
+             </div>
+        </nav>
+        <!--***********************************************************************************************************************-->
+
+
+        <section class="trabalhe">
+
+            <div>
+                <h1>Trabalhe Conosco!</h1>
+            </div>
+
+            <hr>
+
+            <div class="trab_texto">
+                <div class="qualific">
+                    <div class="trab_itens">
+                        <h3>Porque Trabalhar na Base Flex:</h3>
+                        <ul>
+                            <li>Possuímos um ambiente acolhedor e que incentiva alcançar meta e objetivos;</li>
+                            <li>Somos uma empresa voltada para a instrução e excelência de nossos trabalhadores;</li>
+                            <li>Em 2021 entramos para as 10 melhores empresas para se trabalhar.</li>
+                        </ul>
+                    </div>
+
+                    <div class="trab_itens">
+                        <h3>Soft skills almejadas:</h3>
+                        <ul>
+                            <li>Comunicação aberta e clara com a equipe e seus colegas no dia a dia, assim como com os clientes durante o atendimento;</li>
+                            <li>Ouvir e considerar diferentes opiniões sobre um mesmo problema, de forma a buscar a melhor solução;</li>
+                            <li>Adaptabilidade e criatividade para a resolução de problemas e elaboração de projetos.</li>
+                        </ul>
+                    </div>
+
+                    <div class="trab_itens">
+                        <h3>Hard skills almejadas:</h3>
+                        <ul>
+                            <li>Início de graduação em um curso de ensino superior na área da tecnologia e informação;</li>
+                            <li>Noções sobre o uso de computadores e dispositivos móveis, com conhecimento básico no pacote Office.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="formulario">
+                    <h4>Preencha o formulário:</h4>
+                    <p> Com seus dados salvos entraremos em contato assim que surgir novas oportunidades!</p>
+                    <div>
+                        <form class="dados" method="get" action="">
+                            <fieldset>
+                                <legend>Dados Pessoais:</legend>
+                                <div>
+                                    <label>Nome Completo</label>
+                                    <input type="text" required name="nome" >
+                                </div>
+                                <div>
+                                    <label>Telefone/Celular</label>
+                                    <input type="text" placeholder="Ex: (16) 99999-9999" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" maxlength="16" required name="telefone" >
+                                </div>
+                                <div>
+                                    <label>Email</label>
+                                    <input type="email" placeholder="Ex: seuemail@seuemail.com" required name="email"/>
+                                </div>
+                                <div>
+                                    <label>Já Trabalhou na Base Flex?</label>
+                                    <select required name="Trabalhou">
+                                        <option value="SIM">SIM</option>
+                                        <option value="NÃO">NÃO</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <div>
+                                    <label>Anexe seu Currículo</label>
+                                    <input type="file" accept=".pdf, .doc, .docx, .odt" required name="currículo"/>
+                                </div>
+
+                                <input id="enviar" type="submit" value="Enviar" />
+                            </fieldset>
+                        </form>
+                        <div id="agradecimento">
+                            <p>A Base Flex agradece seu interesse!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Footer-->
+        
+        <footer class="rodape">
+
+            <div class="footer">
+
+                <div class="footer1">
+                    <h1>A Base Flex</h1>
+                    <p>Móveis de qualidade para seu lar e escritório</p>
+                </div>
+
+                <div class="footer2">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos e Serviços</a></li>
+                        <li><a href="contatosobre.html">Sobre Nós</a></li>
+                        <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer3">
+                    <h3>Siga nos nas redes sociais:</h3>
+                    <ul class="social">
+                        <li><a href="mailto:abaseflexmoveis@terra.com.br" target="_blank"><img src="img/social/email.svg" alt="Email"></a></li>                       
+                        <li><a href="https://www.facebook.com/abaseflex.abaseflex" target="_blank"><img src="img/social/face.svg" alt="Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/absfxmoveis/" target="_blank"><img src="img/social/insta.svg" alt="instagram"></a></li>
+                        <li><a href="https://wa.me/5516991492434" target="_blank"><img src="img/social/whats.svg" alt="WhatsApp"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+
+
+</html>
